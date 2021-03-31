@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+@font-face {
+    font-family: digital;
+    src: url(./font/digital-7.ttf);
+  }
 body{
     min-height: 100vh;
     display: flex;
@@ -39,21 +43,25 @@ body{
     align-items: center;
     flex-direction: column;
     background-color: black;
+    font-family: digital;
 }
-.container .result span{
+.container .result p{
     display: block;
-    height: 16px;
+    height: 20px;
     width: 100%;
-    font-size: 16px;
+    font-size: 20px;
     text-align: right;
     margin-top: -10px;
+    letter-spacing: 2px;
+    color: chocolate;
 }
-.container .result p {
-    height: 20px;
+.container .result span {
+    height: 22px;
     width: 100%;
     text-align: right;
     margin-bottom: -10px;
-    font-size: 20px;
+    font-size: 22px;
+    letter-spacing: 2px;
 }
 .container .AC_btn,.container .zero{
     grid-column-start: 1;
